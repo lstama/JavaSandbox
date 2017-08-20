@@ -1,12 +1,12 @@
 package tugas.modelchecking.tugas1;
 
-public class IncrementX extends ChangeX implements Runnable {
+public class IncrementX implements Runnable {
     @Override
     public void run() {
         try{
             while (true){
-                if (getX() < 200)
-                setX(getX() + 1);
+                if (ChangeX.getX() < 200)
+                    ChangeX.setX(ChangeX.getX() + 1);
             }
         } catch (Exception e) {
 
